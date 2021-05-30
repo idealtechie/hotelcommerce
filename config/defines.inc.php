@@ -141,7 +141,7 @@ define('_PS_TMP_IMG_DIR_',           _PS_IMG_DIR_.'tmp/');
 define('_PS_TRANS_PATTERN_',            '(.*[^\\\\])');
 define('_PS_MIN_TIME_GENERATE_PASSWD_', '360');
 if (!defined('_PS_MAGIC_QUOTES_GPC_')) {
-    define('_PS_MAGIC_QUOTES_GPC_',         get_magic_quotes_gpc());
+    define('_PS_MAGIC_QUOTES_GPC_',        True);
 }
 
 define('_CAN_LOAD_FILES_', 1);
