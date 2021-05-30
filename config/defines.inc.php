@@ -25,8 +25,9 @@
 */
 
 /* Debug only */
+define('_PS_HOST_MODE_', True);
 if (!defined('_PS_MODE_DEV_')) {
-define('_PS_MODE_DEV_', false);
+define('_PS_MODE_DEV_', true);
 }
 /* Compatibility warning */
 define('_PS_DISPLAY_COMPATIBILITY_WARNING_', false);
@@ -138,6 +139,7 @@ define('_PS_TMP_IMG_DIR_',           _PS_IMG_DIR_.'tmp/');
 
 /* settings php */
 define('_PS_TRANS_PATTERN_',            '(.*[^\\\\])');
+define('_PS_MAGIC_QUOTES_GPC_', true);
 define('_PS_MIN_TIME_GENERATE_PASSWD_', '360');
 if (!defined('_PS_MAGIC_QUOTES_GPC_')) {
     define('_PS_MAGIC_QUOTES_GPC_',         get_magic_quotes_gpc());
