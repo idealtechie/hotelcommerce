@@ -25,11 +25,7 @@
 */
 
 /* Debug only */
-magic_quotes_gpc = Off
-magic_quotes_runtime = Off
-magic_quotes_sybase = Off
-extension=pdo.so
-extension=pdo_mysql.so
+
 if (!defined('_PS_MODE_DEV_')) {
 define('_PS_MODE_DEV_', true);
 }
