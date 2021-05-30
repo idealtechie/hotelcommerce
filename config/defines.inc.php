@@ -25,6 +25,11 @@
 */
 
 /* Debug only */
+magic_quotes_gpc = Off
+magic_quotes_runtime = Off
+magic_quotes_sybase = Off
+extension=pdo.so
+extension=pdo_mysql.so
 if (!defined('_PS_MODE_DEV_')) {
 define('_PS_MODE_DEV_', true);
 }
@@ -138,6 +143,7 @@ define('_PS_TMP_IMG_DIR_',           _PS_IMG_DIR_.'tmp/');
 
 /* settings php */
 define('_PS_TRANS_PATTERN_',            '(.*[^\\\\])');
+define('_PS_MAGIC_QUOTES_GPC_', true);
 define('_PS_MIN_TIME_GENERATE_PASSWD_', '360');
 if (!defined('_PS_MAGIC_QUOTES_GPC_')) {
     define('_PS_MAGIC_QUOTES_GPC_',         get_magic_quotes_gpc());
